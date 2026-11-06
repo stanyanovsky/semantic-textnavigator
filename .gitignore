@@ -1,0 +1,9 @@
+.DS_Store
+node_modules/
+coverage/
+*.log
+.env
+.env.*
+!.env.example
+# Original employer assignment must not enter the public repository.
+*.docx

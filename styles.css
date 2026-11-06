@@ -1,0 +1,13 @@
+:root { font-family: system-ui, sans-serif; color: #172b42; background: #f3f6f9; }
+body { margin: 0; } main { max-width: 1100px; margin: auto; padding: 32px 20px; }
+article { background: white; border: 1px solid #ccd5df; border-radius: 8px; padding: 20px; margin: 20px 0; }
+li { margin: 10px 0; } a { color: #075bb5; } blockquote { margin: 10px 0; white-space: pre-wrap; }
+.source-paragraph { white-space: pre-wrap; overflow-wrap: anywhere; padding: 10px; scroll-margin-top: 20px; }
+.source-paragraph:target { background: #fff1af; outline: 2px solid #a97800; }
+summary, input { cursor: pointer; } h1 { font-size: 1.8rem; }
+.controls { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; }
+table { border-collapse: collapse; width: 100%; background: white; }
+th, td { border: 1px solid #ccd5df; padding: 12px; text-align: left; vertical-align: top; }
+small { display: block; margin: 8px 0; overflow-wrap: anywhere; }
+.table-scroll { overflow-x: auto; } details { margin: 12px 0; }
+#warnings:not(:empty) { border-left: 4px solid #a97800; padding-left: 12px; }

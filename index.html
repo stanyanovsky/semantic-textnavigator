@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Semantic TextNavigator</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<main>
+  <h1>Semantic TextNavigator</h1>
+  <p>Действующие условия поставки с проверяемыми источниками.</p>
+  <label>Выберите TXT-файлы <input id="files" type="file" accept=".txt,text/plain" multiple></label>
+  <p>Повторный выбор заменяет загруженный набор. Поддерживается UTF-8.</p>
+  <div class="controls">
+    <label>Дата проверки <input id="as-of" type="date" value="2026-03-10" required></label>
+    <label>Поставка раньше <input id="delivery-before" type="date"></label>
+    <button id="clear-filter" type="button">Сбросить фильтр</button>
+  </div>
+  <p id="status" role="status">Файлы ещё не загружены.</p>
+  <section id="warnings" aria-label="Предупреждения" role="status"></section>
+  <section id="results" aria-label="Действующие условия"></section>
+  <section id="changes" aria-label="Неприменённые изменения"></section>
+  <section id="sources" aria-label="Исходные тексты"></section>
+</main>
+<script type="module" src="src/app.mjs"></script>
+</body></html>
